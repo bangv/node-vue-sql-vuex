@@ -13,3 +13,15 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+var app=new Vue({
+  router,
+  store,
+  render: h => h(App)
+})
+console.log(new Vue({
+  router,
+  store,
+  render: h => h(App)
+}))
+console.log(app)

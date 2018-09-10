@@ -1,7 +1,7 @@
 /**
  * Created by xbw on 2018/8/23.
  */
-const type = 'SET_VALUE'
+const type = 'changeDetail'
 const state = {
   userName: '第一次值'
 }
@@ -14,12 +14,12 @@ const actions = {
 }
 const getters = {
   setDetail (state) {
-    console.log(state)
+    console.log(state);
     return state.userName
   }
 }
 const mutations = {
-  changeDetail (state, res) {
+  [type] (state, res) {
     state.userName = res
     console.log(res)
   }

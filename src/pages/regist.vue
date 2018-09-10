@@ -1,7 +1,7 @@
 <template>
 
   <div class="login_wrap">
-    <h2>通过login页面无数次改变的值</h2>
+    <h2 class="butoon test">通过login页面无数次改变的值</h2>
     <div>{{detail}}</div>
   </div>
 
@@ -22,4 +22,13 @@
 </script>
 
 <style lang="scss">
+  .login_wrap {
+    font-size: 25px;
+    .butoon {
+      color: red;
+      &.test{
+        font-weight: 100;
+      }
+    }
+  }
 </style>
