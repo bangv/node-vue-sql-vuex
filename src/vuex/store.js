@@ -9,6 +9,6 @@ Vue.use(Vuex)
 console.log(detail)
 export default new Vuex.Store({
   modules: {
-    detail
+    detail:detail
   }
 })
